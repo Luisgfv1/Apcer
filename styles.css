@@ -1,174 +1,258 @@
-/* flat-top
--------------------------------------------------------------- */
-.flat-top {
-	background-color: #D63438;
-	padding: 8px 0 7px;
-	font-size: 15px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+*{
+	margin:0;
+	box-sizing:border-box;
+	padding:0;
 }
 
-.flat-top,
-.flat-top .custom-info a {
+body{
+	
+	font-family:'Roboto', sans-serif;
+	
+}
+/*--------------flat-top------------------*/
+a{
+	text-decoration: none;
 	color: #fff;
 }
-
-.flat-top .custom-info ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;	
-	font-family: "Poppins", sans-serif;
-}
-
-.flat-top .custom-info ul li {
-	display: inline-block;
-	margin-right: 27px;
-	position: relative;
-	line-height: 30px;
-}
-
-.flat-top.header-style1 .custom-info ul li:after {
-	position: absolute;
-	right: -15px;
-	top: 5px;
-	width: 1px;
-	height: 14px;
-	background-color: #617588;
-	content: "";
-}
-
-.flat-top .custom-info ul li:last-child:after {
-	display: none;
-}
-
-.flat-top .custom-info ul li i {	
-	margin-right: 8px;
-}
-
-.flat-top .custom-info a,
-.flat-top .custom-info i,
-.flat-top .custom-info {	
-    font-size: 12px;	
-}
-
-.flat-top .social_networks{
-	margin: 0px 1px;
-}
-
-.flat-top .social_networks,
-.flat-top .info-top-right {
-	float: right;
-	overflow: hidden;	
-}
-
-/* info-top-right */
-.info-top-right {
-	color: #fff;
-}
-
-.menu li, .social_networks li{
-	float: left;
-	padding: 0px 20px 0px 0px; 
-}
-.menu a{
-	color: black;
+ul{
 	text-decoration: none;
 }
-.menu a:hover{
-	color: #2e363a;
-
-}
-.bienvenida li{
+li{
 	list-style: none;
 }
-.bienvenida li a{
-	float: left;
+.row{
+	display: flex;
+	overflow: hidden;
+	height: 30px;
+	background-color: black;
+	margin: 0 auto;
+	
+}
+.row__email{
+	flex: 1;
+	color: white;
+	text-align: center;
+	
+}
+.custom-info{
+	margin: 4px auto;
 }
 
-.Eventos-pasados tr th{
-	border: 1px solid black;
-	border-radius: 4%;
+.row__social{
+	flex:1;
+	display: flex;
+	text-align: center;
+	
 }
-.Eventos-pasados th{
-	width: 30%;
+.info-top-right{
+	order: 2;
+	position: relative;
+	top:6px;
+	color: #fff;
+	display: inline-block;
 }
+
+.info-top-left{
+	order: 1;
+}
+
 
 .social_networks li{
-	border: 1px solid white;
-	padding: 2px 4px;
-	margin-left: 4px;
-	border-radius: 3px;
-	text-decoration: underline;
-}
-.social_networks li i{
-	color: white;
-}
-
-.entry{
-
-	background-color: white ;
-	border-radius: 10px;
-	margin: 7px;
-}
-.entry-border{
-	margin: 10px;
-	padding: 10px;
-}
-
-
-ul.slider {
-    position:relative; /*Necesitamos que el ul sea relativo*/
-}
-ul.slider li {
-    opacity: 0; /*Ocultamos todos los <li>*/
-    transition: opacity .5s;
-    position: absolute; /*Posicionamos en absoluto los <li>*/
-    left: 0px;
-    top: 0px;
-    margin:50px;
-    padding:50px;
-    border:2px solid red;
-    background:#fff;
-}
-ul.slider li:first-child {
-    opacity: 1; /*Mostramos el primer <li>*/
-}
-ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
-}
-nav {
-    position:relative;
-    top:200px;
-    left:50px;
-}
-
-.w3-content,.w3-auto{padding-left:300px;padding-right:300px; padding-top: 1px; padding-bottom: 1px;}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
-.vc_column_container>.vc_column-inner {
-    box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-}
-/*-------yo----------*/
-
-header{
-	box-shadow: #bbb 0px 0px 20px;
-}
-
-
-
-
-/*-------Contacto--------*/
-
-.quetions{
-	width:800px;
-	height:500px;
-	border: 1px solid;
-	margin: 20px auto;
-}
-.quetions__table{
-	width: 100%;
-	height: 100%;
+	background-color: black;
+	width: 27px;
+	height: 25px;
 	text-align: center;
-	border: 1px solid;	
+	border: 1px solid white;
+	border-radius: 4px;
+	padding-top: 2px;
+	margin: 0px 2px;
+	
 }
+
+.social_networks{
+	margin: 4px 100px;
+	position: relative;
+	left: 90px;
+	display: flex;
+	
+}
+
+
+/*-----------------header----------------------------------------------*/
+.header{
+	background-color: #fff;
+	height:  140px;
+
+	background-size: 100% ;
+	background-position-y: -70px;
+	background-image:url(./img/fondo\ de\ header0000.jpg);
+	
+}
+	
+.header__contenedor{
+	display: flex;
+    flex: 1;
+    max-width: 1200px;
+	margin: 0 auto;
+}
+.header__logo{
+	width: 200px;
+	height: 140px;
+	text-align: center;
+	padding: 10px 0;
+	flex: 1;
+	position: relative;
+	right: 30px;
+	
+}
+
+.header__logo img{
+	position: relative;
+	height: 140px;
+	bottom: 10px;
+	
+	
+}
+.header__navegacion{
+    flex: 3;
+    display: flex;
+}
+.header__lista{
+	flex: 1;
+    list-style: none;
+    display: flex;
+}
+.header__navegacion a {
+	color: #251f39;
+	font-weight: 900;
+	letter-spacing: 2px;
+}	
+.header__item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+	transition: all 0.2s ease-in;
+	
+	font-size: 15px;
+}
+.header__item:hover {
+	flex: 1.4;
+	font-size: 20px;
+}
+.header__link{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*-----------------------main-----------------------------*/
+.main{
+	margin-top: 0px;
+}
+.main__presentación{
+	text-align: center;
+	width:auto;
+	height:500px;
+	
+	display: flex;
+
+}
+.w3-content{
+	flex:2;
+	margin: 0 0px 40px 50px ;
+	box-shadow: #888 0px 0px 50px;
+	border-radius: 0px 0px 0px 8px;
+	order: 2;
+	height: 498px;
+	overflow: hidden;
+}	
+.mySlides{
+	width:100%;
+	height: 100%;
+	
+}
+
+.bienvenida{
+	order: 1;
+	flex:1;
+	margin: 180px 70px;
+
+}
+.bienvenida p{
+	text-align: justify;
+}
+
+/*---------eventos------------*/
+
+.Eventos-pasados{
+	background-color:rgba(250, 232, 232, 0.925) ;
+	width:auto;
+	height: 600px;
+	margin: 40px auto;
+}
+
+.Eventos-pasados__title{
+	text-align: center;
+	height: 14%;
+	border: 1px solid;
+}
+
+.Eventos-pasados__title h2{
+	margin: 10px 0px;
+	font-size: 50px;
+}
+.Eventos-pasados__contenido{
+	height: 90%;
+}
+.col-na-row{
+	width: 1300px;
+	height:90%;
+	border: 1px solid;
+	margin: 0px auto;
+}
+.col-na-3{
+	width: 23%;
+	height: 440px;
+	overflow: hidden;
+	border: 1px solid;
+	display: inline-block;
+	margin: 25px;
+	background-color: rgb(75, 54, 54);
+}
+.naeep-image{
+	width: 100%;
+	height: 77%;
+	overflow: hidden;
+	
+}
+
+.naeep-image img{
+	width: 100%;
+}
+
+
+
+
+
+
+/*-----------------footer--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
