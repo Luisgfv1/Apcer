@@ -82,12 +82,13 @@ li{
 /*-----------------header----------------------------------------------*/
 .header{
 	background-color: #fff;
+	width: 1800px;
 	height:  140px;
-
 	background-size: 100% ;
 	background-position-y: -70px;
 	background-image:url(./img/fondo\ de\ header0000.jpg);
-	
+	position: fixed;
+	z-index: 1000;
 }
 	
 .header__contenedor{
@@ -103,7 +104,7 @@ li{
 	padding: 10px 0;
 	flex: 1;
 	position: relative;
-	right: 30px;
+	right: 200px;
 	
 }
 
@@ -115,7 +116,7 @@ li{
 	
 }
 .header__navegacion{
-    flex: 3;
+    flex: 5;
     display: flex;
 }
 .header__lista{
@@ -150,7 +151,7 @@ li{
 
 /*-----------------------main-----------------------------*/
 .main{
-	margin-top: 0px;
+	margin-top: 140px;
 }
 .main__presentación{
 	text-align: center;
@@ -178,11 +179,15 @@ li{
 .bienvenida{
 	order: 1;
 	flex:1;
-	margin: 180px 70px;
+	margin: 110px 70px;
 
 }
 .bienvenida p{
 	text-align: justify;
+}
+.bienvenida__title{
+	margin-bottom:20px ;
+	font-size: 50px;
 }
 
 /*---------eventos------------*/
@@ -190,14 +195,13 @@ li{
 .Eventos-pasados{
 	background-color:rgba(250, 232, 232, 0.925) ;
 	width:auto;
-	height: 600px;
+	height: 1120px;
 	margin: 40px auto;
 }
 
 .Eventos-pasados__title{
 	text-align: center;
-	height: 14%;
-	border: 1px solid;
+	padding-top:10px ;
 }
 
 .Eventos-pasados__title h2{
@@ -210,29 +214,60 @@ li{
 .col-na-row{
 	width: 1300px;
 	height:90%;
-	border: 1px solid;
+
 	margin: 0px auto;
+	text-align: center;
 }
 .col-na-3{
 	width: 23%;
 	height: 440px;
 	overflow: hidden;
-	border: 1px solid;
 	display: inline-block;
-	margin: 25px;
+	margin: 25px 65px;
 	background-color: rgb(75, 54, 54);
+	box-shadow: #888 0px 0px 50px;
+	flex-wrap: wrap;
 }
 .naeep-image{
 	width: 100%;
-	height: 77%;
-	overflow: hidden;
-	
+	height: 57%;
+	overflow: hidden;	
 }
 
 .naeep-image img{
 	width: 100%;
+	transition: transform .8s;
+	position: relative;
+	
 }
 
+.news-info{
+	margin: 30px auto;
+}
+.news-title{
+	height: 67.2px ;
+	width: 100%;
+	
+}
+
+.naeep-btn-wrap{
+	margin: 30px auto;
+	width: 40%;
+	height: 40px;
+	text-align: center;
+	border: 1px solid;
+	padding: 10px ;
+	border-radius: 6px;
+	background-color: white;
+}
+.naeep-btn-wrap a{
+	color: black;
+}
+.col-na-3:hover img{
+	transform: scale(1.4);
+
+.noticias
+	
 
 
 
