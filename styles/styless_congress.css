@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 *{
+
 margin:0;
 box-sizing:border-box;
 padding:0;
@@ -10,6 +11,7 @@ padding:0;
 
 body{
   font-family: 'Ubuntu', sans-serif;
+  align-items: center;
 }
 li{
   list-style: none;
@@ -22,13 +24,13 @@ a{
 /*------Header--------*/
 .header{
   height:150px;
-  /*background: -webkit-linear-gradient(left, var(--color-primario), #2482c0);*/
   padding: 0 50px;
   display: flex;
   box-shadow: #888 0px 0px 20px;
-  max-width: 1348px;
+  width: auto;
 
-
+  z-index: 1000;
+  background-color: white;
 }
 .header__logo{
   height:150px;
@@ -74,11 +76,17 @@ a{
 
 
 /*-------Portada-----------*/
-
+main{
+  text-align: center;
+}
+.portada__imagen{
+  width: auto;
+}
 .portada__imagen img{
   filter: brightness(0.7);
   -webkit-filter: brightness(0.7);
-  width: 1348px;
+  max-width: 1520px;
+  width: 100%;
 }
 .portada__text{
   background-color: rgba(29, 18, 18, 0.452);
@@ -90,6 +98,7 @@ a{
 }
 .portada__text h1{
   font-size: 40px;
+  text-align: left;
 }
 
 /*-----Acerca de-------------*/
@@ -116,19 +125,27 @@ a{
 }
 
 /*-------Participantes----*/
-
+#invitados{
+  margin: 0px auto;
+}
 .participantes{
-  height: 2000px;
+  height: 2700px;
   width: 1348px;
-  
   display: inline-block;
-  background-color: whitesmoke;
+  background-color: whitesmoke ;
+  text-align: center;
 }
 .participantes__title{
-  height: 10%;
+  height: 5%;
   font-size: 50px;
   text-align: center;
   margin-top: 20px;
+}
+.participantes__subtitle{
+  height: 3%;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0px;
 }
 .participantes__list{
   height: 90%;
@@ -143,12 +160,8 @@ a{
   border-radius: 20px;
   display: inline-block;
   margin: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
   overflow: hidden;
-  box-shadow: #888 0px 0px 20px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
 
 .participantes__item{
@@ -159,10 +172,6 @@ a{
   width:90%;
   height:90%;
   border-radius:50% ;
-  -webkit-border-radius:50% ;
-  -moz-border-radius:50% ;
-  -ms-border-radius:50% ;
-  -o-border-radius:50% ;
   overflow: hidden;
   background-color: rgb(187, 187, 187);
   margin: auto;
@@ -171,6 +180,7 @@ a{
 }
 .participantes__item img{
   width: 300px; 
+  position: relative;
   
 }
 
@@ -178,6 +188,7 @@ a{
   height: 25%;
   padding: 2px 30px 0 30px;
   position: relative;
+  text-align: left;
 }
  .participantes__decripcion img{
    width: 30px;
@@ -200,7 +211,12 @@ a{
 .participantes__card:hover .fotito{
   width: 60%;
 }
-
+.participantes__card:hover img{
+  transform: scale(0.7);
+  right: 30%;
+  bottom:30%
+  
+}
 /*-----------Cronograma-----------*/
 table {
   border-collapse: collapse;
@@ -272,18 +288,9 @@ tbody tr {
 
 /*---------------Footer---------*/
 
-
-
-
-
-
-
-
-
-
 .footer{
   height: 60px;
-  width: 1348px;
+  width: auto;
   margin-top: 50px;
   background: -webkit-linear-gradient(left, var(--color-primario), #2482c0);
   padding: 1px 0;
