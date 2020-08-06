@@ -313,9 +313,39 @@ li{
 .afiliacion__list ol{
 	margin-left: 0px;
 }
+.afiliacion__list .list{
+	list-style-type: decimal;
+	margin: 20px 0px 20px 0px ;
+}
+.afiliacion__list .list .sublist{
+	margin-left: 30px;
+}
+.afiliacion__list .list .sublist__b{
+	list-style-type: lower-alpha;
+	margin: 10px 0px 10px 0px ;
+}
 
 
 
+.table_unete{
+	width: 700px;
+	margin: 0px auto;
+	box-shadow: #888 0px 0px 50px;
+
+	border-radius: 10px;
+	
+}
+.presentación_form{
+	text-align: justify;
+	margin: 10px;
+}
+/*--------------Repositorío--------------*/
+.main_repositorio{
+	margin: 10px 120px;
+}
+.img-thumbnail{
+	height: 100px;
+}
 
 
 
