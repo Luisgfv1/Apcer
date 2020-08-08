@@ -347,5 +347,42 @@ li{
 	height: 100px;
 }
 
+/*-----------Contactos-------*/
 
-
+.quetions{
+	width:1000px;
+	height:500px;
+	border: 1px solid black;
+	margin: 0px auto;
+	padding: 70px 30px 30px 30px;
+}
+.th_tiltle{
+	font-size: 40px;
+	padding: 30px 40px ;
+}
+.td_subtitle{
+	font-size: 20px;
+	font-weight: bold;
+}
+.quetions__table{
+	border: 1px solid black;
+	margin: auto ;
+}
+.quetions__table td{
+	border: 1px solid black;
+}
+.td__relleno{
+	width:300px;
+	height:40px;
+}
+.button{
+	width:100px;
+	height:40px;
+	border-radius: 30px;
+	border: 1px solid teal;
+	font-weight: bold;
+}
+.textarea{
+	width:400px;
+	height:200px;
+}
